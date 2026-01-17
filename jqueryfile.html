@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>FAQs Accordion Assignment jquery-ui</title>
+
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.14.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script>
+
+
+    <style>
+        body {
+            font-family: Arial;
+            background: linear-gradient(to right, #2d7caa, #9face6);
+            padding: 40px;
+        }
+
+        /* Accordion container */
+        #accordion {
+            width: 800px;
+            margin: auto;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Question  */
+        #accordion h3 {
+            background: #4b6cb7;
+            color: white;
+            padding: 15px;
+            font-size: 18px;
+            border: none;
+        }
+
+       
+        /* Hover effect */
+        #accordion h3:hover {
+            background: #013d65;
+        }
+
+        /* Title */
+        h1 {
+            text-align: center;
+            color: rgb(255, 255, 255);
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Frequently Asked Questions</h1>
+
+    <div id="accordion">
+
+        <h3>What is your return policy?</h3>
+        <div>
+            <p>You can return any product within 15 days of purchase.</p>
+        </div>
+
+        <h3>Do you provide home delivery?</h3>
+        <div>
+            <p>Yes, we provide free home delivery All over Pakistan.</p>
+        </div>
+
+        <h3>What payment methods do you accept?</h3>
+        <div>
+            <ul>
+                <li>Cash on Delivery</li>
+                <li>Credit Card</li>
+                <li>Online Banking</li>
+            </ul>
+        </div>
+
+        <h3>How can I contact support?</h3>
+        <div>
+            <p>You can contact us via Email or WhatsApp.</p>
+        </div>
+
+    </div>
+
+</body>
+
+
+    <script>
+        $(function () {
+            $("#accordion").accordion();
+        });
+    </script>
+
+</html>
